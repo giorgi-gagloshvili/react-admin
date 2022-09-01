@@ -1,23 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from './components/Header';
+import Sidebar from './components/Sidebar';
+import Alert from './components/Alert';
+import LessonsList from './components/Lessons';
+import News from './components/News'
+import Calendar from './components/Calendar'
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Sidebar />
+      <div className='pl-[232px]'>
+        <Header />
+        <main className="bg-[#f2f4fb] py-5 px-6">
+          <Alert />
+          <div className="flex w-full gap-5">
+            <LessonsList />
+            <Calendar />
+          </div>
+          <News />
+        </main>
+      </div>
     </div>
   );
 }
