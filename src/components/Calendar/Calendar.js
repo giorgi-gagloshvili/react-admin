@@ -4,7 +4,8 @@ const Calendar = () => {
     return (
         <div className="mt-16">
             <SectionHeader />
-            <div className="bg-white rounded-lg shadow-item w-60 py-[10px] px-5 mt-[14px]">
+            <div className="bg-white rounded-lg shadow-item w-[248px] py-[10px] px-4 mt-[14px]">
+                <h3 className="text-[#333333] font-firagoMedium leading-5 mb-5">ოთხშაბათი- 17 მარტი, 2022</h3>
                 <div className="grid grid-cols-7 grid-rows-5 justify-items-center items-center gap-2">
                     <span className="text-xs font-firagoMedium text-[#030229]">შ</span>
                     <span className="text-xs font-firagoMedium text-[#030229]">კ</span>
